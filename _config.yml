@@ -1,0 +1,17 @@
+# Site settings
+title: 陈兴
+author: Wang Kaifei
+email: kaifei.net@gmail.com
+keywords: RaspberryPi, python, Mac, iPhone
+description: 除非太卑鄙得偏爱自己的人，才能无耻的写自己的事情
+baseurl: 
+url: http://kaifei.net
+twitter_username: WangKaifei
+github_username: WangKaifei
+disqus_shortname: WangKaifei
+google_analytics_id: UA-36707658-1
+
+# Build settings
+markdown: redcarpet
+permalink: /posts/:year-:month-:day-:title.html
+highlighter: pygment
