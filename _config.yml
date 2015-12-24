@@ -4,8 +4,8 @@ author: Wang Kaifei
 email: kaifei.net@gmail.com
 keywords: RaspberryPi, python, Mac, iPhone
 description: 除非太卑鄙得偏爱自己的人，才能无耻的写自己的事情
-baseurl: http://kaifei.net
-url: http://kaifei.net
+baseurl: 
+url: 
 twitter_username: WangKaifei
 github_username: WangKaifei
 disqus_shortname: WangKaifei
