@@ -16,3 +16,4 @@ google_analytics_id: UA-36707658-1
 markdown: redcarpet
 permalink: /posts/:year-:month-:day-:title.html
 highlighter: rb-pygments
+exclude: [qiniu.conf, deploy.sh]
