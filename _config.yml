@@ -5,10 +5,11 @@ email: kaifei.net@gmail.com
 keywords: RaspberryPi, python, Mac, iPhone
 description: 除非太卑鄙得偏爱自己的人，才能无耻的写自己的事情
 baseurl: 
-url: 
+url: https://kaifei.net
 twitter_username: WangKaifei
 github_username: WangKaifei
 disqus_shortname: WangKaifei
+duoshuo_shortname: WangKaifei
 google_analytics_id: UA-36707658-1
 
 # Build settings

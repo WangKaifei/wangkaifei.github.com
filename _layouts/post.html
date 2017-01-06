@@ -10,6 +10,7 @@ layout: default
 
   <article class="post-content">
   {{ content }}
+  {% if site.duoshuo_shortname %}{% include duoshuo.html %}{% endif %}
   {% if site.disqus_shortname %}{% include disqus.html %}{% endif %}
   </article>
 
