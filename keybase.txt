@@ -1,0 +1,67 @@
+==================================================================
+https://keybase.io/wangkaifei
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://kaifei.net
+  * I am wangkaifei (https://keybase.io/wangkaifei) on keybase.
+  * I have a public key with fingerprint 269A 2848 AA23 EDFE D09B  19DC 69F1 D896 43CA 01BC
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01014076a4aeac6c2ad335bd057d215ee6482a298341f9cae558372f32553fddbbff0a",
+            "fingerprint": "269a2848aa23edfed09b19dc69f1d89643ca01bc",
+            "host": "keybase.io",
+            "key_id": "69f1d89643ca01bc",
+            "kid": "01014076a4aeac6c2ad335bd057d215ee6482a298341f9cae558372f32553fddbbff0a",
+            "uid": "3a53118a3b7166f611fbb924de90ae19",
+            "username": "wangkaifei"
+        },
+        "service": {
+            "hostname": "kaifei.net",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1472438966,
+    "expire_in": 157680000,
+    "prev": "9c4219464f561872117caad7747e79854ad7417a7835d0f825ee55f540428c7b",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owGtUl9IFEEcvjvNSi0Sk5BSaMLqQWVnd3Zn9/qn2UOaRNgfhahrdnf23Kzda2+1
+RM8golQsREFBJK8eJNCIIstKkMqIjB6iK6Qo6MlMkAINoqJmzd56bF5m5jff9833
++/i1L0vyBfzml4muknH/iP/ZlOqrfHTlYQNQbb0eBBtADZ3f6DGdRt1QjamDIOAg
+BxGHJYIIJZqk8UQXBFHVORHrPBQplZDME16RBQQNRSNUFGUB84bAi6Jg6LqqGgZH
+QD4wTCtMnYhjWi6T5SWF8DKSCeEFqhtU5xQVKromKQbUZUVCgkY4qGqMWG1HPQYz
+p5IoLTRtVmOX0Ly9f+D/s+/aeTmBiAKEMhFUDCXJkCA0VFXhkU4VjlCoeMAodSxy
+nDL0SWKFa4hpUBPE8gGr15ka9aL1elnA/HkvtKjLuBHHdm3NPsbq1a4biQY9nlsf
+mRejamhBIqSals5yZIw66kRN2wJByJCaa3qaEGEeCSwNKR/QUxHToSHTQ4hYkjm2
+vH9oHZNUNMRDBVVJyBAlKGMeQqwRomOMMMWKLCJ2RhATLAuizhkyzwITRUNEHOJl
+DavA6+qEZYOgwHySMNOMmmGLuLUOBbHUFv+aZJ8/4EtZFPAmzJe6dMXfsdtxYonv
+YtHoynPbQX35YOPPIb60aLg7bdCZG7j+qKOvM/1oIHBKW9+0b/G3dxN9c129cxve
+Js2syEt+87T/cmxLDrf70s5PN9uuZpYVa6sHZ5rDpSR3dmKv/XlyNDuzqGPqVmdc
+cMaL3fT7Zb7Cytw7Tcmz8fekNQmHMi5ml1yoGI7h9tsN8fy0nDU/uqY/N05uWt5a
+e6Rk+PvXtqGkx77oy4qG5NhQRc7Wpd2rivrPRvIm/YkH04mq5lc9oHcsM+1wxq8P
+Y7sODJx+PrruzObrWdfupr84mLuyqb0n8STelL7fBBPq7LR/z9GyghsjLXmHXqZU
+rvua9bogvu38xgdrsxOdH++V/wY=
+=rxGN
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/wangkaifei
+
+==================================================================
