@@ -8,10 +8,10 @@ title: CentOS-7 Bootstrap
 
 安装常用网络工具
 
-    yum install epel-release -y 
-    yum update -y 
+    yum install epel-release -y
+    yum update -y
     yum install bind-utils screen htop nload mtr traceroute iftop tree supervisor whois -y
-    wget -P /usr/local/bin/ https://www.neiwang.pub/downloads/besttrace && chmod 744 /usr/local/bin/besttrace
+    wget -P /usr/local/bin/ https://download.kuajinghutong.com/besttrace && chmod 744 /usr/local/bin/besttrace
     wget -P /usr/local/bin/ https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py && chmod 744 /usr/local/bin/speedtest.py
     wget -P /usr/local/bin/ https://raw.githubusercontent.com/oooldking/script/master/superspeed.sh && chmod 744 /usr/local/bin/superspeed.sh
     wget -P /usr/local/bin/ https://raw.githubusercontent.com/oooldking/script/master/superbench.sh && chmod 744 /usr/local/bin/superbench.sh
