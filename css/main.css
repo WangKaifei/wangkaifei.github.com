@@ -450,3 +450,175 @@ h1.site-title a:visited {
     margin: 0 0 15px; }
 
 }
+
+/* Dark mode (prefers-color-scheme) */
+/* ----------------------------------------------------------*/
+
+@media (prefers-color-scheme: dark) {
+
+  body {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+  }
+
+  ::selection {
+    background: #2a7ae2;
+    color: #fff;
+  }
+
+  a { color: #6ba3f0; }
+  a:hover { color: #8bbaff; }
+  a:visited { color: #8a7aaa; }
+
+  h1, h2, h3, h4, h5, h6 { color: #ddd; }
+
+  .post-content h1,
+  .post-content h2,
+  .post-content h3,
+  .post-content h4,
+  .post-content h5,
+  .post-content h6 { color: #ddd; }
+
+  /* Site header */
+
+  .site-header {
+    border-top-color: #555;
+    border-bottom-color: #333;
+    background-color: #252525;
+  }
+
+  .site-title,
+  .site-title:hover,
+  .site-title:visited,
+  h1.site-title a,
+  h1.site-title a:hover,
+  h1.site-title a:visited { color: #e0e0e0; }
+
+  .site-nav .page-link { color: #aaa; }
+  .site-nav .page-link:hover { color: #e0e0e0; }
+
+  /* Site footer */
+
+  .site-footer {
+    border-top-color: #333;
+    background-color: #1e1e1e;
+  }
+
+  .site-footer p { color: #999; }
+
+  /* Page content */
+
+  .page-content { background-color: #1e1e1e; }
+
+  /* Home */
+
+  .posts li { border-bottom-color: #2a2a2a; }
+
+  .posts .post-link { color: #6ba3f0; }
+  .posts .post-date { color: #999; }
+
+  /* Post */
+
+  .post-header .meta { color: #999; }
+
+  /* Code blocks */
+
+  .post pre,
+  .post code {
+    border-color: #3a3a3a;
+    background-color: #2d2d2d;
+  }
+
+  .post pre.terminal {
+    border-color: #111;
+    background-color: #222;
+    color: #0f0;
+  }
+
+  .post pre.terminal code { background-color: #222; }
+
+  /* Blockquotes */
+
+  .post-content blockquote {
+    border-left-color: #555;
+    color: #aaa;
+  }
+
+  /* Tables */
+
+  .post-content table th,
+  .post-content table td {
+    border-color: #333;
+  }
+
+  .post-content table th {
+    background-color: #2a2a2a;
+  }
+
+  .post-content hr {
+    border-top-color: #333;
+  }
+
+  /* Syntax highlighting */
+
+  .highlight  { background: #2d2d2d; }
+  .highlight .c { color: #6a6a6a; font-style: italic; }
+  .highlight .cp { color: #999; }
+  .highlight .cs { color: #999; font-weight: bold; font-style: italic; }
+  .highlight .gd { color: #ddd; background-color: #4a1a1a; }
+  .highlight .gd .x { color: #ddd; background-color: #6a1a1a; }
+  .highlight .gi { color: #ddd; background-color: #1a4a1a; }
+  .highlight .gi .x { color: #ddd; background-color: #1a6a1a; }
+  .highlight .go { color: #888; }
+  .highlight .gp { color: #999; }
+  .highlight .gu { color: #999; }
+  .highlight .gt { color: #cc5555; }
+  .highlight .kt { color: #88aadd; }
+  .highlight .m { color: #66cccc; }
+  .highlight .s { color: #dd9988; }
+  .highlight .na { color: #88bbaa; }
+  .highlight .nb { color: #66aadd; }
+  .highlight .nc { color: #88aadd; }
+  .highlight .no { color: #88bbaa; }
+  .highlight .nf { color: #dd8866; }
+  .highlight .nn { color: #aaa; }
+  .highlight .nt { color: #88aadd; }
+  .highlight .nv { color: #88bbaa; }
+  .highlight .mf { color: #66cccc; }
+  .highlight .mh { color: #66cccc; }
+  .highlight .mi { color: #66cccc; }
+  .highlight .mo { color: #66cccc; }
+  .highlight .sb { color: #dd9988; }
+  .highlight .sc { color: #dd9988; }
+  .highlight .sd { color: #dd9988; }
+  .highlight .s2 { color: #dd9988; }
+  .highlight .se { color: #dd9988; }
+  .highlight .sh { color: #dd9988; }
+  .highlight .si { color: #dd9988; }
+  .highlight .sx { color: #dd9988; }
+  .highlight .s1 { color: #dd9988; }
+  .highlight .ss { color: #cc88bb; }
+  .highlight .bp { color: #aaa; }
+  .highlight .vc { color: #88bbaa; }
+  .highlight .vg { color: #88bbaa; }
+  .highlight .vi { color: #88bbaa; }
+  .highlight .il { color: #66cccc; }
+
+  /* Mobile nav in dark mode */
+
+  @media screen and (max-width: 600px) {
+
+    .site-nav {
+      background-color: #252525;
+      border-color: #333;
+    }
+
+    .site-nav .menu-icon { color: #ccc; }
+
+    .site-nav .menu-icon:focus-visible {
+      outline-color: #6ba3f0;
+    }
+
+  }
+
+}

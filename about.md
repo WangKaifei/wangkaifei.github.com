@@ -16,6 +16,6 @@ permalink: /about.html
 
 联络
 
-- [Twitter](http://twitter.com/WangKaifei)
-- [Weibo](http://weibo.com/maplife)
-- [Instagram](http://instagram.com/WangKaifei)
+- [Twitter](http://twitter.com/{{ site.twitter_username }})
+- [GitHub](https://github.com/{{ site.github_username }})
+- [Instagram](https://instagram.com/{{ site.instagram_username }})
