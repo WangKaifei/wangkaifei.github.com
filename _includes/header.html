@@ -4,7 +4,7 @@
     <nav class="site-nav">
       <a href="javascript:void(0)" class="menu-icon" aria-label="导航菜单" role="button">☰</a>
       <div class="trigger">
-        {% for page in site.pages %}{% if page.title and page.title != "404" %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}{% endfor %}
+        {% for page in site.pages %}{% if page.title and page.url != "/404.html" %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}{% endfor %}
       </div>
     </nav>
   </div>
