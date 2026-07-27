@@ -35,18 +35,6 @@ a:visited { color: #5a6a8a; }
 
 /* Utility */
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
 .wrap:before,
 .wrap:after { content:""; display:table; }
 .wrap:after { clear: both; }
@@ -71,10 +59,14 @@ a:visited { color: #5a6a8a; }
 
 .site-title,
 .site-title:hover,
-.site-title:visited {
+.site-title:visited,
+h1.site-title a,
+h1.site-title a:hover,
+h1.site-title a:visited {
   display: block;
   color: #333;
   font-size: 26px;
+  font-weight: 400;
   letter-spacing: -.5px;
   float: left;
   line-height: 56px;

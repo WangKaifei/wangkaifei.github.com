@@ -1,6 +1,10 @@
 <header class="site-header">
   <div class="wrap">
+    {% if page.url == "/" or page.url == "/index.html" %}
+    <h1 class="site-title"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    {% else %}
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    {% endif %}
     <nav class="site-nav">
       <a href="javascript:void(0)" class="menu-icon" aria-label="导航菜单" role="button">☰</a>
       <div class="trigger">
