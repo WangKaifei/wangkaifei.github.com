@@ -72,6 +72,7 @@ h1.site-title a:visited {
   line-height: 56px;
   position: relative;
   z-index: 1;
+  transition: none;
 }
 
 .site-nav {
@@ -83,13 +84,8 @@ h1.site-title a:visited {
 
 .site-nav .page-link {
   margin-left: 20px;
-  color: #727272;
-  letter-spacing: -.5px;
-  transition: color .15s ease;
-}
-
-.site-nav .page-link:hover {
   color: #333;
+  letter-spacing: -.5px;
 }
 
 /* Site footer */
@@ -492,10 +488,9 @@ h1.site-title a:visited {
   .site-title:visited,
   h1.site-title a,
   h1.site-title a:hover,
-  h1.site-title a:visited { color: #e0e0e0; }
+  h1.site-title a:visited { color: #e0e0e0; transition: none; }
 
-  .site-nav .page-link { color: #aaa; }
-  .site-nav .page-link:hover { color: #e0e0e0; }
+  .site-nav .page-link { color: #e0e0e0; }
 
   /* Site footer */
 
