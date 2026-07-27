@@ -4,23 +4,34 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html, body { height: 100%; }
 
-body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 300;
-  background-color: #fdfdfd;
+html {
+  scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+  background-color: #fdfdfd;
+  color: #333;
+}
 
-a         { color: #2a7ae2; text-decoration: none; }
-a:hover   { color: #000; text-decoration: underline; }
-a:visited { color: #205caa; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 500; }
+
+::selection {
+  background: #2a7ae2;
+  color: #fff;
+}
+
+a         { color: #2a7ae2; text-decoration: none; transition: color .15s ease; }
+a:hover   { color: #111; text-decoration: underline; }
+a:visited { color: #5a6a8a; }
 
 /* Utility */
 
@@ -52,7 +63,7 @@ a:visited { color: #205caa; }
   display: block;
   color: #333;
   font-size: 26px;
-  letter-spacing: -1px;
+  letter-spacing: -.5px;
   float: left;
   line-height: 56px;
   position: relative;
@@ -70,6 +81,11 @@ a:visited { color: #205caa; }
   margin-left: 20px;
   color: #727272;
   letter-spacing: -.5px;
+  transition: color .15s ease;
+}
+
+.site-nav .page-link:hover {
+  color: #333;
 }
 
 /* Site footer */
@@ -81,9 +97,9 @@ a:visited { color: #205caa; }
 
 .site-footer p {
   text-align: center;
-  font-size: 15px;
-  letter-spacing: -.3px;
-  color: #828282;
+  font-size: 14px;
+  letter-spacing: -.2px;
+  color: #767676;
 }
 
 
@@ -93,6 +109,17 @@ a:visited { color: #205caa; }
 .page-content {
   padding: 30px 0;
   background-color: #fff;
+  min-height: calc(100vh - 56px - 88px);
+}
+
+.page-content ul,
+.page-content ol {
+  padding-left: 1.5em;
+  margin: 1em 0;
+}
+
+.page-content li {
+  margin: .4em 0;
 }
 
 
@@ -103,18 +130,28 @@ a:visited { color: #205caa; }
 
 .posts { list-style-type: none; }
 
-.posts li { margin-bottom: 10px; }
+.posts li {
+  margin-bottom: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.posts li:last-child {
+  border-bottom: none;
+}
 
 .posts .post-link {
-  font-size: 20px;
-  letter-spacing: -1px;
-  line-height: 1;
+  font-size: 18px;
+  letter-spacing: -.2px;
+  line-height: 1.5;
+  color: #2a7ae2;
 }
 
 .posts .post-date {
   display: block;
-  font-size: 15px;
-  color: #818181;
+  font-size: 14px;
+  color: #767676;
+  margin-bottom: 3px;
 }
 
 
@@ -124,15 +161,15 @@ a:visited { color: #205caa; }
 .post-header { margin: 10px 0 30px; }
 
 .post-header h1 {
-  font-size: 26px;
-  letter-spacing: -1.75px;
-  line-height: 1;
-  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: -.5px;
+  line-height: 1.3;
+  font-weight: 500;
 }
 
 .post-header .meta {
   font-size: 15px;
-  color: #818181;
+  color: #767676;
   margin-top: 5px;
 }
 
@@ -147,38 +184,82 @@ a:visited { color: #205caa; }
 .post-content h4,
 .post-content h5,
 .post-content h6 {
-  line-height: 1;
-  font-weight: 300;
+  line-height: 1.3;
+  font-weight: 500;
   margin: 40px 0 20px;
+  color: #222;
 }
 
 .post-content h2 {
-  font-size: 32px;
-  letter-spacing: -1.25px;
+  font-size: 28px;
+  letter-spacing: -.5px;
+}
+
+@media screen and (min-width: 601px) {
+  .post-content h2 { font-size: 30px; }
 }
 
 .post-content h3 {
-  font-size: 26px;
-  letter-spacing: -1px;
+  font-size: 22px;
+  letter-spacing: -.3px;
 }
 
 .post-content h4 {
-  font-size: 20px;
-  letter-spacing: -1px;
+  font-size: 18px;
 }
 
 .post-content blockquote {
-  border-left: 4px solid #e8e8e8;
+  border-left: 4px solid #ccc;
   padding-left: 20px;
-  font-size: 18px;
-  opacity: .6;
-  letter-spacing: -1px;
+  font-size: 17px;
+  color: #666;
+  letter-spacing: -.2px;
   font-style: italic;
   margin: 30px 0;
 }
 
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.post-content table {
+  max-width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 15px;
+}
+
+.post-content table th,
+.post-content table td {
+  padding: 8px 12px;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.post-content table th {
+  background-color: #f8f8f8;
+  font-weight: 500;
+}
+
+.post-content hr {
+  border: none;
+  border-top: 1px solid #e8e8e8;
+  margin: 40px 0;
+}
+
+.post-content p {
+  margin: 1.2em 0;
+}
+
 .post-content ul,
-.post-content ol { padding-left: 20px; }
+.post-content ol { padding-left: 1.5em; }
+
+.post-content li {
+  margin: .4em 0;
+}
 
 .post pre,
 .post code {
@@ -187,7 +268,8 @@ a:visited { color: #205caa; }
   padding: 8px 12px;
   border-radius: 3px;
   font-size: 15px;
-  overflow:scroll;
+  overflow: auto;
+  word-wrap: break-word;
 }
 
 .post code { padding: 1px 5px; }
@@ -312,6 +394,12 @@ a:visited { color: #205caa; }
     width: 36px;
     text-align: center;
     line-height: 36px;
+    outline-offset: 2px;
+  }
+
+  .site-nav .menu-icon:focus-visible {
+    outline: 2px solid #2a7ae2;
+    border-radius: 3px;
   }
 
   .site-nav .trigger {
@@ -320,7 +408,8 @@ a:visited { color: #205caa; }
     display: none;
   }
 
-  .site-nav:hover .trigger { display: block; }
+  .site-nav:hover .trigger,
+  .site-nav:focus-within .trigger { display: block; }
 
   .site-nav .page-link {
     display: block;
@@ -330,13 +419,25 @@ a:visited { color: #205caa; }
     margin: 0;
   }
 
-  .post-header h1 { font-size: 36px; }
-  .post-content h2 { font-size: 28px; }
-  .post-content h3 { font-size: 22px; }
-  .post-content h4 { font-size: 18px; }
-  .post-content blockquote { padding-left: 10px; }
+  .post-header h1 { font-size: 26px; }
+  .post-content h2 { font-size: 24px; }
+  .post-content h3 { font-size: 20px; }
+  .post-content h4 { font-size: 17px; }
+  .post-content blockquote { padding-left: 12px; font-size: 16px; }
   .post-content ul,
-  .post-content ol { padding-left: 10px; }
+  .post-content ol { padding-left: 1.2em; }
+
+  .posts .post-link { font-size: 16px; }
+
+  .post pre {
+    font-size: 14px;
+    padding: 12px;
+    margin: 15px 0;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .site-footer { padding: 20px 0; }
 
   .site-footer .column {
     float: none;
