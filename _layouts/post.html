@@ -12,4 +12,20 @@ layout: default
   {{ content }}
   </article>
 
+  <!-- JSON-LD Structured Data: BlogPosting -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ page.title | escape }}",
+    "url": "{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}",
+    "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ site.author }}"
+    },
+    "description": "{% if page.description %}{{ page.description | escape }}{% else %}{{ site.description | escape }}{% endif %}"
+  }
+  </script>
+
 </div>

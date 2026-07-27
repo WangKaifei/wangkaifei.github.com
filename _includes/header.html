@@ -2,7 +2,7 @@
   <div class="wrap">
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
     <nav class="site-nav">
-      <a href="#" class="menu-icon" aria-label="导航菜单" role="button">☰</a>
+      <a href="javascript:void(0)" class="menu-icon" aria-label="导航菜单" role="button">☰</a>
       <div class="trigger">
         <a class="page-link" href="/feed.xml">Feed</a>
         {% for page in site.pages %}{% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}{% endfor %}

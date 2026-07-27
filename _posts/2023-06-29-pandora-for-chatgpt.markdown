@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 本地使用 Docker 部署 Pandora for ChatGPT
+description: 使用 Docker 在本地部署 Pandora 项目，实现无需登录即可访问 ChatGPT 的详细教程。
 ---
 ### 前提
 1. 会上网

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: CentOS-7 Bootstrap
+description: CentOS 7 服务器初始化配置指南，包括时区调整、常用工具安装和基础环境设置。
 ---
 调整时区为东八区
 

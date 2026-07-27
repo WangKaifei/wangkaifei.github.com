@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 在 heroku 上部署 jekyll
+description: 详细记录在 Heroku 上部署 Jekyll 静态博客的完整流程，包括遇到的问题和解决方案。
 ---
 在 heroku 上部署了 jekyll，中间出现过几次折腾，记录下过程。
 

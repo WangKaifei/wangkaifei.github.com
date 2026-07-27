@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 解决通过 _config.yml 自定义固定链接后不生效的问题
+description: Jekyll 自定义 permalink 不生效的解决方法，排查 _config.yml 配置与 --watch 参数的冲突。
 ---
 本地开启 jekyll server ，并开启 `--watch` 参数，修改 post 的分类、title，生成的 permalink 均发生变化。但通过修改 `_config.yml` 来自定义 permalink 时，自定义链接不生效。
 

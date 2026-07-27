@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 解决安装 gem 时出现的 cannot load such file mkmf 问题
+description: 解决 Ruby gem 安装时「cannot load such file mkmf」错误的完整步骤，包括安装 ruby-dev 依赖。
 ---
 本地安装 jekyll 时，出现如下错误：
 

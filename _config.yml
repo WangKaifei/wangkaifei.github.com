@@ -1,17 +1,18 @@
 # Site settings
 title: 陈兴
 author: Wang Kaifei
-email: kaifei.net@gmail.com
 keywords: RaspberryPi, python, Mac, iPhone
 description: 除非太卑鄙得偏爱自己的人，才能无耻的写自己的事情
 baseurl: 
 url: https://www.kaifei.net
 twitter_username: WangKaifei
 github_username: WangKaifei
-google_analytics_id: UA-36707658-1
+google_analytics_id: G-QWNNSEQGDE
 
 # Build settings
 markdown: kramdown
 permalink: /posts/:year-:month-:day-:title.html
 highlighter: rouge
 exclude: [qiniu.conf, deploy.sh, Gemfile, Gemfile.lock]
+plugins:
+  - jekyll-sitemap

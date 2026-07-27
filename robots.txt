@@ -1,17 +1,4 @@
-User-agent: Baiduspider
-User-agent: Sosospider
-User-agent: sogou spider
-User-agent: YodaoBot
-User-agent: Googlebot
-User-agent: Bingbot
-User-agent: Slurp
-User-agent: MSNBot
-User-agent: googlebot-image
-User-agent: googlebot-mobile
-User-agent: yahoo-blogs/v3.9
-User-agent: psbot
 User-agent: *
-Disallow: /css/*
-Disallow: /CNAME
-Disallow: /*.txt
-Disallow: /*.xml
+Disallow: /css/
+
+Sitemap: https://www.kaifei.net/sitemap.xml

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Professional
+description: 对「Professional（职业化）」的中文翻译思考，探讨专业精神与职业态度的真正含义。
 ---
 非常喜欢 Professional 这个英文单词，但对中文的翻译并不满意。『专业』也好，『职业』也罢，总不能完整地表达出英文中的那一层意思。相对而言，『职业』这个翻译稍好一些。
 
