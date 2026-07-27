@@ -31,7 +31,6 @@ a:visited { color: #205caa; }
   max-width: 800px;
   padding: 0 30px;
   margin: 0 auto;
-  zoom: 1;
 }
 
 
@@ -79,59 +78,12 @@ a:visited { color: #205caa; }
   border-top: 1px solid #e8e8e8;
   padding: 30px 0;
 }
-.site-footer p{
-  text-align: center;
-}
 
-.footer-heading {
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: -.5px;
-  margin-bottom: 15px;
-}
-
-.site-footer .column { float: left; margin-bottom: 15px; }
-
-.footer-col-1 {
-  width: 270px; /*fallback*/
-  width: -webkit-calc(35% - 10px);
-  width: -moz-calc(35% - 10px);
-  width: -o-calc(35% - 10px);
-  width: calc(35% - 10px);
-  margin-right: 10px
-}
-.footer-col-2 {
-  width: 175px; /*fallback*/
-  width: -webkit-calc(23.125% - 10px);
-  width: -moz-calc(23.125% - 10px);
-  width: -o-calc(23.125% - 10px);
-  width: calc(23.125% - 10px);
-  margin-right: 10px
-}
-.footer-col-3 {
-  width: 335px; /*fallback*/
-  width: -webkit-calc(41.875%);
-  width: -moz-calc(41.875%);
-  width: -o-calc(41.875%);
-  width: calc(41.875%);
-}
-
-.site-footer ul { list-style: none; }
-
-.site-footer li,
 .site-footer p {
+  text-align: center;
   font-size: 15px;
   letter-spacing: -.3px;
   color: #828282;
-}
-
-.github-icon-svg,
-.twitter-icon-svg {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  position: relative;
-  top: 3px;
 }
 
 
@@ -233,8 +185,6 @@ a:visited { color: #205caa; }
   border: 1px solid #d5d5e9;
   background-color: #eef;
   padding: 8px 12px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
   font-size: 15px;
   overflow:scroll;
@@ -256,8 +206,6 @@ a:visited { color: #205caa; }
   border: 1px solid #000;
   background-color: #333;
   color: #FFF;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
 }
 
@@ -334,21 +282,11 @@ a:visited { color: #205caa; }
 
 @media screen and (max-width: 750px) {
 
-  .footer-col-1 { width: 50%; }
-
-  .footer-col-2 {
-    width: 45%; /*fallback*/
-    width: -webkit-calc(50% - 10px);
-    width: -moz-calc(50% - 10px);
-    width: -o-calc(50% - 10px);
-    width: calc(50% - 10px);
-    margin-right: 0;
-  }
-
-  .site-footer .column.footer-col-3 {
-    width: auto;
+  .site-footer .column {
     float: none;
     clear: both;
+    width: auto;
+    margin: 0 0 15px;
   }
 
 }
@@ -362,8 +300,6 @@ a:visited { color: #205caa; }
     z-index: 10;
     top: 14px; right: 8px;
     background-color: white;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
     border: 1px solid #e8e8e8;
   }
@@ -377,8 +313,6 @@ a:visited { color: #205caa; }
     text-align: center;
     line-height: 36px;
   }
-
-  .site-nav .menu-icon svg { width: 18px; height: 16px; }
 
   .site-nav .trigger {
     clear: both;
