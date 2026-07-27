@@ -3,3 +3,6 @@ _site
 .DS_Store
 *.sublime-project
 *.sublime-workspace
+.reasonix/
+Gemfile
+reasonix.toml
