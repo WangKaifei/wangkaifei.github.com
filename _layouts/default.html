@@ -41,6 +41,10 @@
     <link rel="manifest" href="/site.webmanifest">
     <link href="/feed.xml" rel="alternate" type="application/rss+xml">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    {% if page.layout == 'post' %}
+    <!-- Artalk Comment System -->
+    <link href="https://artalk.kaifei.net/dist/Artalk.css" rel="stylesheet" />
+    {% endif %}
 </head>
 <body>
 

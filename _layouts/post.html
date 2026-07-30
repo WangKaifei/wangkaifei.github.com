@@ -28,4 +28,17 @@ layout: default
   }
   </script>
 
+  <!-- Artalk Comment System -->
+  <div id="Comments"></div>
+  <script src="https://artalk.kaifei.net/dist/Artalk.js"></script>
+  <script>
+  Artalk.init({
+    el:        '#Comments',
+    pageKey:   '{{ page.url }}',
+    pageTitle: '{{ page.title }}',
+    server:    'https://artalk.kaifei.net',
+    site:      '{{ site.title }}',
+  })
+  </script>
+
 </div>
