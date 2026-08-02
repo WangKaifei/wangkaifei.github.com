@@ -29,16 +29,23 @@ layout: default
   </script>
 
   <!-- Artalk Comment System -->
-  <div id="Comments"></div>
+  <div id="Comments"
+       data-page-key="{{ page.url | escape }}"
+       data-page-title="{{ page.title | escape }}"
+       data-site="{{ site.title | escape }}"></div>
   <script src="https://artalk.kaifei.net/dist/Artalk.js"></script>
   <script>
-  Artalk.init({
-    el:        '#Comments',
-    pageKey:   '{{ page.url }}',
-    pageTitle: '{{ page.title }}',
-    server:    'https://artalk.kaifei.net',
-    site:      '{{ site.title }}',
-  })
+  (function () {
+    var el = document.getElementById('Comments');
+    Artalk.init({
+      el:        '#Comments',
+      pageKey:   el.getAttribute('data-page-key'),
+      pageTitle: el.getAttribute('data-page-title'),
+      server:    'https://artalk.kaifei.net',
+      site:      el.getAttribute('data-site'),
+      darkMode:  'auto',
+    });
+  })();
   </script>
 
 </div>

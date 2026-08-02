@@ -6,10 +6,20 @@
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
     {% endif %}
     <nav class="site-nav">
-      <a href="javascript:void(0)" class="menu-icon" aria-label="导航菜单" role="button">☰</a>
+      <button type="button" class="menu-icon" aria-label="导航菜单" aria-expanded="false">☰</button>
       <div class="trigger">
         {% for page in site.pages %}{% if page.title and page.url != "/404.html" %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}{% endfor %}
       </div>
     </nav>
   </div>
 </header>
+<script>
+  (function () {
+    var nav = document.querySelector('.site-nav');
+    var icon = nav.querySelector('.menu-icon');
+    icon.addEventListener('click', function () {
+      var open = nav.classList.toggle('is-open');
+      icon.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  })();
+</script>

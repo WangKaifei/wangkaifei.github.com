@@ -395,6 +395,10 @@ h1.site-title a:visited {
     text-align: center;
     line-height: 36px;
     outline-offset: 2px;
+    border: 0;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
   }
 
   .site-nav .menu-icon:focus-visible {
@@ -409,7 +413,8 @@ h1.site-title a:visited {
   }
 
   .site-nav:hover .trigger,
-  .site-nav:focus-within .trigger { display: block; }
+  .site-nav:focus-within .trigger,
+  .site-nav.is-open .trigger { display: block; }
 
   .site-nav .page-link {
     display: block;

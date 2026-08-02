@@ -4,5 +4,5 @@ _site
 *.sublime-project
 *.sublime-workspace
 .reasonix/
-Gemfile
+Gemfile.lock
 reasonix.toml
