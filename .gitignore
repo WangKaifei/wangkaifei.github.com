@@ -3,6 +3,7 @@ _site
 .DS_Store
 *.sublime-project
 *.sublime-workspace
+.qoder/
 .reasonix/
 Gemfile.lock
 reasonix.toml
