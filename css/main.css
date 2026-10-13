@@ -102,6 +102,15 @@ h1.site-title a:visited {
   color: #767676;
 }
 
+.site-footer p a,
+.site-footer p a:hover,
+.site-footer p a:visited { color: inherit; }
+
+.site-footer .site-footer-beian {
+  margin-top: 4px;
+  font-size: 13px;
+}
+
 
 /* Page Content styles */
 /* ----------------------------------------------------------*/
